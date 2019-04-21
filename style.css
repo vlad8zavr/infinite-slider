@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #f3f3f3;
+}
+
+.carousel-container {
+	width: 800px;
+	height: 400px;
+	position: relative;
+	margin: 50px auto 0;
+  	border: 10px solid silver;
+  	border-radius: 10px;
+}
+.slider {
+	overflow: hidden;
+	max-width: 100%;
+	margin: 0;
+}
+#carousel {
+	position: relative;
+	width: 8000px;
+	height: 400px;
+    padding: 0;
+    margin: 0;
+}
+
+.animate{
+	-webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+    -o-transition-duration: .5s;
+    transition-duration: .5s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+.slide {
+    list-style: none;
+	position: relative;
+	float: left;
+	transform: translateX(-800px)
+}
+
+.slide img {
+	width: 800px;
+	height: 400px;
+}
+
+.slide h2 {
+	position: absolute;
+	left: 10%;
+	top: 70%;
+	transform: translate(0, -50%);
+	font-size: 40px;
+	color: #fff;
+}
+
+.controls .arrow {
+	width: 40px;
+	height: 40px;
+	color: gray;
+	font-size: 48px;
+	border-radius: 4px;
+	position: absolute;
+	top: 50%;
+	z-index: 100;
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.controls .arrow:hover {
+	opacity: 0.95;
+}
+
+.arrow .fas {
+	display: flex;
+	justify-content: center;
+}
+
+.prev {
+	left: 0;
+	transform: translate(0, -50%);
+}
+
+.next {
+	right: 0;
+	transform: translate(0, -50%);
+}
+

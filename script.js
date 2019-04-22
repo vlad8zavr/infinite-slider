@@ -65,6 +65,11 @@ document.addEventListener('DOMContentLoaded', function() {
             nextSlide();
         }, sliderTimer);
     });
+    document.querySelector('.arrow').addEventListener('mouseleave', function() {
+        startSliderLoop = setInterval(function() {
+            nextSlide();
+        }, sliderTimer);
+    });
 
 
 	// add click events to control buttons
